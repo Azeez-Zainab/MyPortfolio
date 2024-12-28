@@ -5,61 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azeez Zainab's Portfolio</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f8f8;
+            color: #333;
         }
+
         header {
             background-color: #333;
             color: white;
+            padding: 2rem 1rem;
             text-align: center;
-            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         header h1 {
             margin: 0;
+            font-size: 2.5rem;
         }
+
+        header p {
+            font-size: 1.1rem;
+        }
+
         section {
             padding: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            color: #444;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 48%;
+            margin-bottom: 1rem;
+            padding: 1rem;
             text-align: center;
         }
-        footer {
+
+        .project-card h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-card a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact {
             background-color: #333;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .contact a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0.5rem;
+        }
+
+        footer {
+            background-color: #222;
             color: white;
             text-align: center;
             padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .projects {
+                flex-direction: column;
+            }
+
+            .project-card {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Azeez Zainab's Portfolio</h1>
-        <p>Welcome to my online portfolio. Here you can learn about my skills and projects!</p>
+        <p>Welcome to my online portfolio. Here you can learn about my skills, projects, and how to contact me!</p>
     </header>
 
     <section>
         <h2>About Me</h2>
-        <p>Hello! I’m Azeez Zainab, a web developer, virtual assistant, and tech enthusiast from Nigeria.</p>
+        <p>Hello! I’m Azeez Zainab, a passionate web developer, virtual assistant, and tech enthusiast from Nigeria.</p>
 
         <h2>Skills</h2>
         <ul>
             <li>HTML, CSS, JavaScript</li>
             <li>Database Management</li>
             <li>Virtual Assistance</li>
-            <li>Computer Networking</li>
+            <li>Computer Networking & Maintenance</li>
         </ul>
 
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Web Development Project 1</h3>
+                <p>A small website built using HTML, CSS, and JavaScript that displays my portfolio.</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Virtual Assistant Project</h3>
+                <p>Managed administrative tasks such as scheduling, emails, and data entry for clients.</p>
+                <a href="https://www.linkedin.com/in/yourlinkedin/" target="_blank">View Details</a>
+            </div>
+        </div>
+
         <h2>Contact</h2>
-        <p>Email: azeemzainab@gmail.com</p>
+        <div class="contact">
+            <p>Let's connect! Feel free to reach out via email or social media.</p>
+            <a href="mailto:azeemzainab@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/yourlinkedin/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        </div>
     </section>
 
     <footer>
         <p>© 2024 Azeez Zainab. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
-  
