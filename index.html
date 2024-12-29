@@ -14,13 +14,38 @@ body {
     color: white;  /* Change text color to white for contrast */
 }
 
-/* Header */
-header {
-    background-color: #222;  /* Darker shade for the header */
-    color: white;
-    padding: 2rem 1rem;
+/* Hero Section */
+.hero {
+    height: 100vh; /* Full screen height */
+    background-image: url('https://github.com/Azeez-Zainab/MyPortfolio/blob/main/hero-bg.jpg?raw=true'); /* Replace with the path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Parallax effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color for contrast */
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text readability */
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px; /* Limit text width */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #f0a500; /* Accent color */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
 }
 
 /* Section Styling */
@@ -168,10 +193,12 @@ footer p {
 </head>
 <body>
 
-    <header>
-        <h1>Azeez Zainab's Portfolio</h1>
-        <p>Welcome to my online portfolio. Here you can learn about my skills, projects, and how to contact me!</p>
-    </header>
+   <header class="hero">
+    <div class="hero-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I’m Azeez Zainab — a web developer and virtual assistant passionate about solving problems through technology.</p>
+    </div>
+</header>
 
    <section>
     <div class="about-container">
