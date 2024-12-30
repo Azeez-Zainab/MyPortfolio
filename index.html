@@ -73,19 +73,29 @@ html {
 }
 
 /* Section Styling */
- #about {
-    padding: 4rem 2rem; /* Add space around the section */
+#about {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full viewport height */
+    padding: 2rem; /* Optional: Space around the content */
+    background-color: #f0f0f0; /* Optional: Background color */
 }
 
 .about-container {
     display: flex;
-    align-items: center; /* Vertically align items */
-    gap: 2rem; /* Space between image and text */
-    max-width: 1200px;
-    margin: 0 auto; /* Center the section */
-    background-color: #ffffff
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px; /* Limit width if necessary */
+    width: 100%; /* Ensure it takes full available width */
+    padding: 2rem; /* Add padding around the content */
+    background-color: #fff; /* Optional: Background for the container */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for depth */
 }
 
+}
 .about-image img {
     width: 300px; /* Increase image size */
     height: 300px; /* Keep height equal to width for a perfect circle */
@@ -96,15 +106,14 @@ html {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow */
 }
 
-
 .about-text {
     flex: 1; /* Allow text to take up remaining space */
+    text-align: center; /* Optional: Center-align the text */
 }
 
 .about-text h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color:#000
 }
 
 .about-text p {
@@ -113,15 +122,16 @@ html {
     color: #000;
 }
 
+
 @media (max-width: 768px) {
     .about-container {
-        flex-direction: column; /* Stack items vertically on mobile */
+        flex-direction: column; /* Stack items vertically on smaller screens */
         text-align: center; /* Center-align text */
     }
 
     .about-image img {
-        width: 150px; /* Smaller size for mobile */
-        height: 150px;
+        width: 200px; /* Smaller image for mobile */
+        height: 200px;
     }
 }
 
