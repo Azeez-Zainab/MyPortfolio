@@ -74,9 +74,8 @@ html {
 }
 
 /* Section Styling */
-    #about {
+ #about {
     padding: 4rem 2rem; /* Add space around the section */
-    background-color: #f8f9fa; /* Light background */
 }
 
 .about-container {
@@ -94,19 +93,11 @@ html {
     border: 5px solid #333; /* Circular frame border color */
     padding: 5px; /* Space between image and border */
     background-color: #fff; /* Frame background color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
-}
-
-.about-container {
-    display: flex;
-    align-items: center; /* Vertically align image and text */
-    gap: 2rem; /* Space between the image and text */
-    max-width: 1200px;
-    margin: 0 auto; /* Center the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
 }
 
 .about-text {
-    flex: 1; /* Allow the text to take up remaining space */
+    flex: 1; /* Allow text to take up remaining space */
 }
 
 .about-text h2 {
@@ -120,19 +111,18 @@ html {
     color: #333;
 }
 
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack items vertically on mobile */
+        text-align: center; /* Center-align text */
+    }
 
-.about-container p {
-    font-size: 1.2rem; /* Slightly larger font for paragraphs */
-    margin-bottom: 1rem;
+    .about-image img {
+        width: 150px; /* Smaller size for mobile */
+        height: 150px;
+    }
 }
 
-.profile-image {
-    width: 200px;  /* Set a fixed size or adjust as needed */
-    height: 200px;
-    object-fit: cover;  /* Ensures the image covers the frame area */
-    border-radius: 50%;  /* Circular image */
-    border: 5px solid white;  /* White border around the image */
-}
 
    section {
     padding: 2rem;
@@ -249,7 +239,6 @@ footer p {
     <div class="about-container">
         <div class="about-image">
         <img src="https://github.com/Azeez-Zainab/MyPortfolio/blob/main/image.jpg?raw=true" alt="Azeez Zainab" class="profile-image">
-    </div>
         </div>
         <div class="about-text">
             <h2>About Me</h2>
