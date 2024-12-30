@@ -88,18 +88,25 @@ html {
 }
 
 .about-image img {
-    width: 300px; /* Adjust size of the image */
-    height: auto;
-    border-radius: 10px; /* Optional: Rounded corners */
-    border: 5px solid #333; /* Frame border color */
-    padding: 10px; /* Space inside the frame */
+    width: 200px; /* Adjust size of the image */
+    height: 200px; /* Make height equal to width for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid #333; /* Circular frame border color */
+    padding: 5px; /* Space between image and border */
     background-color: #fff; /* Frame background color */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
 }
 
+.about-container {
+    display: flex;
+    align-items: center; /* Vertically align image and text */
+    gap: 2rem; /* Space between the image and text */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the section */
+}
 
 .about-text {
-    flex: 1; /* Allow text to take up remaining space */
+    flex: 1; /* Allow the text to take up remaining space */
 }
 
 .about-text h2 {
@@ -117,18 +124,6 @@ html {
 .about-container p {
     font-size: 1.2rem; /* Slightly larger font for paragraphs */
     margin-bottom: 1rem;
-}
-
-/* Image Frame */
-.image-frame {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
-    padding: 1rem;
-    background-color: #444;  /* Dark background for the frame */
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .profile-image {
