@@ -59,7 +59,10 @@ html {
     border-radius: 10px;
     max-width: 800px; /* Limit text width */
 }
-
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -224,11 +227,10 @@ footer p {
     </style>
 </head>
 <body>
-
-<header class="hero">
-    <div class="hero-content">
-        <h1>Azeez Zainab Oluwabukola</h1>
-        <p> I am a web developer and virtual assistant passionate about solving problems through technology.</p>
+ </div>
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Azeez Zainab Oluwabukola</h2>
+        <p>I'm a <span class="typed" data-typed-items="Web Developer,Database Administrator,Network Engineer,Designer, Freelancer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
        <a href="#about" class="hero-button">About Me</a>
         <a href="#skills" class="hero-button">Skills</a>
         <a href="#projects" class="hero-button">Projects</a>
