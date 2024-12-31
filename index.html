@@ -17,8 +17,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
-/* Hero Section */
+    /* Hero Section */
 .hero {
     height: 100vh; /* Full screen height */
     background-image: url('https://github.com/Azeez-Zainab/MyPortfolio/blob/main/hero-bg.jpg?raw=true'); /* Replace with the path to your image */
@@ -63,13 +62,14 @@ html {
     border-color: #fff; /* Add a border color on hover */
 }
 
-        
 .hero-content {
     background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text readability */
     padding: 2rem;
     border-radius: 10px;
     max-width: 800px; /* Limit text width */
+    width: 90%; /* Make the container responsive */
 }
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -81,7 +81,37 @@ html {
     line-height: 1.8;
 }
 
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 100vh; /* Ensure the hero section fills the screen */
+        padding: 0 1rem; /* Add some padding on smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Adjust title size for mobile */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Adjust paragraph font size for mobile */
+    }
+
+    .hero-nav ul {
+        flex-direction: column; /* Stack nav items vertically on smaller screens */
+        gap: 1rem; /* Space out the items */
+    }
+
+    .hero-nav a {
+        font-size: 1.1rem; /* Adjust nav link font size for mobile */
+        padding: 0.5rem 1.5rem; /* Adjust padding for mobile */
+    }
+
+    .hero-content {
+        max-width: 90%; /* Adjust content width */
+        padding: 1.5rem; /* Add more padding on smaller screens */
+    }
 }
+
 
 /* Section Styling */
 #about {
