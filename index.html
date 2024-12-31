@@ -158,33 +158,74 @@ html {
 }
 
 
-   section {
-    padding: 2rem;
-    max-width: 1100px;
+#skills {
+    background-color: #f4f4f4; /* Light background color */
+    padding: 3rem 0;
+}
+
+.skills-container {
+    width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 
-section h2 {
-    color: #f0f0f0;  /* Slightly lighter text color for section headings */
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+.skills-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+.skill {
+    margin: 1.5rem 0;
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 0;
+.skill p {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
 }
 
-ul li {
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
+.skill-bar {
+    width: 100%;
+    background-color: #ddd; /* Background color for the bar */
+    border-radius: 10px;
+    overflow: hidden;
 }
+
+.skill-bar div {
+    height: 10px;
+    border-radius: 10px;
+}
+
+.html-bar {
+    width: 90%; /* 90% proficiency */
+    background-color: #e34f26; /* HTML color */
+}
+
+.css-bar {
+    width: 85%; /* 85% proficiency */
+    background-color: #2965f1; /* CSS color */
+}
+
+.js-bar {
+    width: 75%; /* 75% proficiency */
+    background-color: #f0db4f; /* JavaScript color */
+}
+
+.db-bar {
+    width: 80%; /* 80% proficiency */
+    background-color: #4f5b62; /* Database color */
+}
+
+.networking-bar {
+    width: 70%; /* 70% proficiency */
+    background-color: #00bfae; /* Networking color */
+}
+
+.va-bar {
+    width: 60%; /* 60% proficiency */
+    background-color: #ffa500; /* Virtual Assistance color */
+}
+
 
 /* Projects Section */
 .projects {
@@ -296,15 +337,53 @@ Let’s collaborate and bring great ideas to life!
 
 </section>
 <section id="skills">
-    <h2>My Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Database Management</li>
-        <li>Virtual Assistance</li>
-    </ul>
+    <div class="skills-container">
+        <h2 class="skills-title">My Skills</h2>
+        
+        <div class="skill">
+            <p>HTML</p>
+            <div class="skill-bar">
+                <div class="html-bar"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>CSS</p>
+            <div class="skill-bar">
+                <div class="css-bar"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="skill-bar">
+                <div class="js-bar"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>Database Management</p>
+            <div class="skill-bar">
+                <div class="db-bar"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>Networking</p>
+            <div class="skill-bar">
+                <div class="networking-bar"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>Virtual Assistance</p>
+            <div class="skill-bar">
+                <div class="va-bar"></div>
+            </div>
+        </div>
+    </div>
 </section>
+
 
 
       <section id="projects">
