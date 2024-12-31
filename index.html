@@ -32,24 +32,35 @@ html {
     text-align: center;
 }
 
-/* Hero Button */
-.hero-button {
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 0.8rem 2rem;
-    background-color: #ffffff; /* Button background color */
-    color: #000; /* Button text color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold;
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+.hero-nav {
+    display: flex;
+    justify-content: center; /* Center the navigation bar */
+    gap: 1.5rem; /* Space between links */
+    padding: 1rem; /* Padding around the nav */
 }
 
-.hero-button:hover {
-    background-color: #87CEEB; /* Light blue on hover */
-    color: #000; /* Maintain text color */
-    transform: translateY(-2px); /* Slight "lift" on hover */
+.hero-nav ul {
+    list-style: none; /* Remove default list styles */
+    display: flex;
+    gap: 1.5rem; /* Space between nav items */
+    margin: 0;
+    padding: 0;
+}
+
+.hero-nav a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Change to your preferred color */
+    font-size: 1.2rem; /* Adjust font size */
+    padding: 0.5rem 1rem; /* Add some padding */
+    border: 2px solid transparent; /* Add a border for hover effect */
+    border-radius: 5px; /* Rounded corners */
+    transition: 0.3s; /* Smooth transition effect */
+}
+
+.hero-nav a:hover {
+    background-color: #fff; /* Change background on hover */
+    color: #333; /* Change text color on hover */
+    border-color: #fff; /* Add a border color on hover */
 }
 
         
@@ -241,11 +252,13 @@ footer p {
     <div class="hero-content">
         <h1>Welcome to My Portfolio</h1>
         <p>Hi, I’m Azeez Zainab — a web developer and virtual assistant passionate about solving problems through technology.</p>
-        <div class="hero-buttons">
-       <a href="#about" class="hero-button">About Me</a>
-        <a href="#skills" class="hero-button">Skills</a>
-        <a href="#projects" class="hero-button">Projects</a>
-        <a href="#contact" class="hero-button">Contact Me</a>
+         <nav class="hero-nav">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     </div>
 </header>
 
