@@ -17,6 +17,12 @@ body {
 html {
     scroll-behavior: smooth;
 }
+        section {
+    margin-bottom: 2rem; /* Space between sections */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
     /* Hero Section */
 .hero {
     height: 100vh; /* Full screen height */
@@ -116,12 +122,12 @@ html {
 /* Section Styling */
 #about {
     background-color: #f0f0f0; /* Change to your desired background color */
-    height: 100vh; /* Full viewport height */
     width: 100%; /* Full width of the page */
     display: flex; /* To align content inside */
+    min-height: 100vh; /* Ensure the section adjusts to its content */
+    padding: 4rem 2rem; /* Add spacing */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    padding: 2rem; /* Add padding for better spacing */
     box-sizing: border-box; /* Ensure padding doesn’t affect width/height */
 }
 
@@ -207,12 +213,13 @@ html {
     position: relative; /* For positioning the underline */
     display: inline-block; /* Ensures the underline fits the text width */
 }
-.skills-tittle :after {
+        
+.skills-title:after {
     content: ""; /* Empty content for the underline */
     display: block; /* Make it a block element */
     width: 50%; /* Adjust underline width */
     height: 3px; /* Adjust underline thickness */
-    background-color:  #4682B4; /* Adjust underline color */
+    background-color: #4682B4; /* Adjust underline color */
     margin: 0.5rem auto 0; /* Center the underline below the text */
 }
 
