@@ -277,21 +277,28 @@ html {
 
 
 /* Projects Section */
-.projects {
+#projects {
+    background-color: #f4f4f4;
+    padding: 3rem 0;
+}
+
+.projects-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
     justify-content: space-between;
+    gap: 1.5rem; /* Space between cards */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .project-card {
-    background-color: #333;  /* Dark background for project cards */
+    background-color: #333; /* Dark background for project cards */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 48%;
-    margin-bottom: 1rem;
+    width: 48%; /* Adjust width to fit two cards side by side */
     padding: 1rem;
     text-align: center;
-    color: white;  /* Text color inside cards */
+    color: white; /* Text color inside cards */
 }
 
 .project-card h3 {
@@ -305,6 +312,21 @@ html {
     text-decoration: none;
     font-weight: bold;
 }
+
+.project-card a:hover {
+    color: #0056b3; /* Change color on hover */
+}
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+
 
 /* Contact Section */
 .contact {
@@ -436,18 +458,21 @@ Let’s collaborate and bring great ideas to life!
 
 
       <section id="projects">
-            <div class="project-card">
-                <h3>Web Development Project 1</h3>
-                <p>A small website built using HTML, CSS, and JavaScript that displays my portfolio.</p>
-                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <h3>Virtual Assistant Project</h3>
-                <p>Managed administrative tasks such as scheduling, emails, and data entry for clients.</p>
-                <a href="https://www.linkedin.com/in/yourlinkedin/" target="_blank">View Details</a>
-            </div>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Web Development Project 1</h3>
+            <p>A small website built using HTML, CSS, and JavaScript that displays my portfolio.</p>
+            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
         </div>
-        </section>
+
+        <div class="project-card">
+            <h3>Virtual Assistant Project</h3>
+            <p>Managed administrative tasks such as scheduling, emails, and data entry for clients.</p>
+            <a href="https://www.linkedin.com/in/yourlinkedin/" target="_blank">View Details</a>
+        </div>
+    </div>
+</section>
+
         <section id="contact">
         <div class="contact">
             <p>Let's connect! Feel free to reach out via email or social media.</p>
