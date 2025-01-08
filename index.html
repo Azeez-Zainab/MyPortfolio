@@ -275,7 +275,6 @@ html {
     background-color: #4682B4; /* Virtual Assistance color */
 }
 
-
 /* Projects Section */
 #projects {
     background-color: #F0FFFF;
@@ -284,44 +283,36 @@ html {
 
 .projects-container {
     display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1.5rem; /* Space between cards */
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 1.5rem; /* Space between project images */
 }
 
-.project-card {
-    background-color: #ffffff; /* white background for project cards */
-    border-radius: 8px;
+.project-image {
+    width: 45%; /* Adjust width to fit two images side by side */
+    border-radius: 10px;
+    overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 45%; /* Adjust width to fit two cards side by side */
-    padding: 1rem;
-    text-align: center;
-    color: black; /* Text color inside cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card h3 {
-    color: #000;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.project-card a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
+.project-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.project-card a:hover {
-    color: #0056b3; /* Change color on hover */
-}
 @media (max-width: 768px) {
     .projects-container {
         flex-direction: column;
     }
 
-    .project-card {
+    .project-image {
         width: 100%; /* Full width on smaller screens */
     }
 }
@@ -457,21 +448,21 @@ Let’s collaborate and bring great ideas to life!
 
 
 
-      <section id="projects">
+  <section id="projects">
+    <h2 class="projects-title">Projects</h2>
     <div class="projects-container">
-        <div class="project-card">
-            <h3>Web Development Project 1</h3>
-            <p>A small website built using HTML, CSS, and JavaScript that displays my portfolio.</p>
-            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-        </div>
+        <!-- Project 1 -->
+        <a href="https:https://azeez-zainab.github.io/MyPortfolio/" target="_blank" class="project-image">
+            <img src"https://github.com/Azeez-Zainab/MyPortfolio/blob/main/web.jpeg?raw=true" alt="Web development Project">
+        </a>
 
-        <div class="project-card">
-            <h3>Virtual Assistant Project</h3>
-            <p>Managed administrative tasks such as scheduling, emails, and data entry for clients.</p>
-            <a href="https://www.linkedin.com/in/yourlinkedin/" target="_blank">View Details</a>
-        </div>
+        <!-- Project 2 -->
+        <a href="https://www.linkedin.com/in/azeezzainab/" target="_blank" class="project-image">
+            <img src="https://github.com/Azeez-Zainab/MyPortfolio/blob/main/VA.jpg?raw=true" alt="Virtual Assistant Project">
+        </a>
     </div>
 </section>
+
 
         <section id="contact">
         <div class="contact">
